@@ -7,12 +7,12 @@
     xmlns:pages="clr-namespace:ShellMenu.Pages"
     xmlns:ctrl="clr-namespace:ShellMenu.Controls"
     Shell.FlyoutBehavior="Flyout"
-    FlyoutBackgroundColor="Beige">
+    FlyoutBackgroundColor="Beige"
+    >
 
     <Shell.Resources>
         <Style x:Key="MyPageStyle" TargetType="Element">
             <Setter Property="Shell.ForegroundColor" Value="Orange"/>
-            
         </Style>
     </Shell.Resources>
 
