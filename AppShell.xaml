@@ -24,7 +24,6 @@
 
     <ShellContent
         Title="Home"
-        
         Icon="home.png"
         Style="{StaticResource MyPageStyle}"
         ContentTemplate="{DataTemplate local:MainPage}"
