@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ShellMenu.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ShellMenu"
+    xmlns:pages="clr-namespace:ShellMenu.Pages"
+    xmlns:ctrl="clr-namespace:ShellMenu.Controls"
+    Shell.FlyoutBehavior="Flyout"
+    FlyoutBackgroundColor="Beige">
+
+    <Shell.Resources>
+        <Style x:Key="MyPageStyle" TargetType="Element">
+            <Setter Property="Shell.ForegroundColor" Value="Orange"/>
+            
+        </Style>
+    </Shell.Resources>
+
+
+    <Shell.FlyoutHeader>
+        <ctrl:Header/>
+    </Shell.FlyoutHeader>
+  
+
+    <ShellContent
+        Title="Home"
+        
+        Icon="home.png"
+        Style="{StaticResource MyPageStyle}"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage"
+        />
+    <ShellContent
+        Title="First"
+        Icon="leaf.png"
+        ContentTemplate="{DataTemplate pages:FirstPage}"
+        Route="FirstPage" />
+    
+    <ShellContent
+        Title="Second"      
+        Icon="paw.png"
+        ContentTemplate="{DataTemplate pages:SecondPage}"
+        Route="SecondPage" />
+    
+    <ShellContent
+        Title="Third"
+        Icon="middle.png"
+        ContentTemplate="{DataTemplate pages:ThirdPage}"
+        Route="ThirdPage" />
+
+    <Shell.FlyoutFooter>
+        <ctrl:Footer/>
+    </Shell.FlyoutFooter>
+
+
+</Shell>
